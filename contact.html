@@ -36,21 +36,26 @@ tailwind.config = {
       <a href="index.html"><img src="logo.png" alt="Sovryx Logo" class="w-12 h-12 rounded-lg"></a>
       <a href="index.html" class="font-display font-bold text-3xl" style="color:#3B4A9A; text-decoration:none;">Sovryx Tech</a>
      </div>
-     <div class="hidden md:flex items-center gap-8">
-      <a href="services.html" class="text-sm font-medium text-gray-600 hover:text-brand transition-colors">Services</a>
-      <a href="about.html" class="text-sm font-medium text-gray-600 hover:text-brand transition-colors">About</a>
-      <a href="portfolio.html" class="text-sm font-medium text-gray-600 hover:text-brand transition-colors">Portfolio</a>
-      <a href="contact.html" class="text-sm font-medium nav-link-active transition-colors">Contact</a>
-      <a href="contact.html" class="bg-brand hover:bg-brand-dark text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-all shadow-md shadow-brand/20 hover:shadow-lg hover:shadow-brand/30" style="text-decoration:none;">Let's Talk</a>
-     </div>
+      <div class="hidden md:flex items-center gap-8">
+       <a href="index.html" class="text-sm font-medium text-gray-600 hover:text-brand transition-colors">Home</a>
+       <a href="about.html" class="text-sm font-medium text-gray-600 hover:text-brand transition-colors">About Us</a>
+       <a href="services.html" class="text-sm font-medium text-gray-600 hover:text-brand transition-colors">Services</a>
+       <a href="pricing.html" class="text-sm font-medium text-gray-600 hover:text-brand transition-colors">Pricing</a>
+       <a href="portfolio.html" class="text-sm font-medium text-gray-600 hover:text-brand transition-colors">Portfolio</a>
+       <a href="contact.html" class="text-sm font-medium nav-link-active transition-colors">Contact</a>
+       <a href="contact.html#quote" class="bg-accent hover:bg-accent-light text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-all shadow-md shadow-accent/20" style="text-decoration:none;">Get Quote</a>
+      </div>
      <button id="mobile-toggle" class="md:hidden text-brand"><i data-lucide="menu" class="w-6 h-6"></i></button>
     </div>
-    <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 flex flex-col gap-3 items-center">
-     <a href="services.html" class="text-sm font-medium text-gray-600">Services</a>
-     <a href="about.html" class="text-sm font-medium text-gray-600">About</a>
-     <a href="portfolio.html" class="text-sm font-medium text-gray-600">Portfolio</a>
-     <a href="contact.html" class="text-sm font-semibold text-brand">Contact</a>
-    </div>
+     <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 flex flex-col gap-3 items-center">
+      <a href="index.html" class="text-sm font-medium text-gray-600">Home</a>
+      <a href="about.html" class="text-sm font-medium text-gray-600">About Us</a>
+      <a href="services.html" class="text-sm font-medium text-gray-600">Services</a>
+      <a href="pricing.html" class="text-sm font-medium text-gray-600">Pricing</a>
+      <a href="portfolio.html" class="text-sm font-medium text-gray-600">Portfolio</a>
+      <a href="contact.html" class="text-sm font-semibold text-brand">Contact</a>
+      <a href="contact.html#quote" class="bg-accent text-white text-sm font-semibold px-6 py-2 rounded-full" style="text-decoration:none;">Get Quote</a>
+     </div>
    </nav>
 
    <!-- PAGE HERO -->
@@ -80,47 +85,47 @@ tailwind.config = {
      <!-- Info Side -->
      <div class="reveal">
       <h2 class="font-display font-bold text-2xl md:text-3xl mb-6" style="color:#1a1f36;">Contact Information</h2>
-      <div class="space-y-5 mb-10">
-       <div class="flex items-start gap-4">
-        <div class="w-12 h-12 rounded-2xl bg-brand/8 flex items-center justify-center flex-shrink-0">
-         <i data-lucide="mail" class="w-5 h-5 text-brand"></i>
+       <div class="space-y-5 mb-10">
+        <div class="flex items-start gap-4">
+         <div class="w-12 h-12 rounded-2xl bg-brand/8 flex items-center justify-center flex-shrink-0">
+          <i data-lucide="mail" class="w-5 h-5 text-brand"></i>
+         </div>
+         <div>
+          <p class="font-semibold text-gray-800 text-sm mb-1">Email Us</p>
+          <p class="text-gray-500 text-sm">sovryx.tech@gmail.com</p>
+          <p class="text-gray-400 text-xs mt-0.5">We respond within 24 hours</p>
+         </div>
         </div>
-        <div>
-         <p class="font-semibold text-gray-800 text-sm mb-1">Email Us</p>
-         <p class="text-gray-500 text-sm">hello@sovryx.tech</p>
-         <p class="text-gray-500 text-sm">support@sovryx.tech</p>
+        <div class="flex items-start gap-4">
+         <div class="w-12 h-12 rounded-2xl bg-accent/8 flex items-center justify-center flex-shrink-0">
+          <i data-lucide="phone" class="w-5 h-5 text-accent"></i>
+         </div>
+         <div>
+          <p class="font-semibold text-gray-800 text-sm mb-1">Call/WhatsApp</p>
+          <p class="text-gray-500 text-sm">9762948720</p>
+          <p class="text-gray-400 text-xs mt-0.5">Mon–Sun, 9am–9pm NPT</p>
+         </div>
+        </div>
+        <div class="flex items-start gap-4">
+         <div class="w-12 h-12 rounded-2xl bg-brand/8 flex items-center justify-center flex-shrink-0">
+          <i data-lucide="map-pin" class="w-5 h-5 text-brand"></i>
+         </div>
+         <div>
+          <p class="font-semibold text-gray-800 text-sm mb-1">Our Location</p>
+          <p class="text-gray-500 text-sm">Biratnagar-1, Morang</p>
+          <p class="text-gray-500 text-sm">Nepal</p>
+         </div>
+        </div>
+        <div class="flex items-start gap-4">
+         <div class="w-12 h-12 rounded-2xl bg-accent/8 flex items-center justify-center flex-shrink-0">
+          <i data-lucide="clock" class="w-5 h-5 text-accent"></i>
+         </div>
+         <div>
+          <p class="font-semibold text-gray-800 text-sm mb-1">Business Hours</p>
+          <p class="text-gray-500 text-sm">24/7 Support Available</p>
+         </div>
         </div>
        </div>
-       <div class="flex items-start gap-4">
-        <div class="w-12 h-12 rounded-2xl bg-brand/8 flex items-center justify-center flex-shrink-0">
-         <i data-lucide="phone" class="w-5 h-5 text-brand"></i>
-        </div>
-        <div>
-         <p class="font-semibold text-gray-800 text-sm mb-1">Call Us</p>
-         <p class="text-gray-500 text-sm">+1 (555) 240-8090</p>
-         <p class="text-gray-400 text-xs mt-0.5">Mon–Fri, 9am–6pm PST</p>
-        </div>
-       </div>
-       <div class="flex items-start gap-4">
-        <div class="w-12 h-12 rounded-2xl bg-brand/8 flex items-center justify-center flex-shrink-0">
-         <i data-lucide="map-pin" class="w-5 h-5 text-brand"></i>
-        </div>
-        <div>
-         <p class="font-semibold text-gray-800 text-sm mb-1">Visit Us</p>
-         <p class="text-gray-500 text-sm">340 Pine Street, Suite 800</p>
-         <p class="text-gray-500 text-sm">San Francisco, CA 94104</p>
-        </div>
-       </div>
-       <div class="flex items-start gap-4">
-        <div class="w-12 h-12 rounded-2xl bg-brand/8 flex items-center justify-center flex-shrink-0">
-         <i data-lucide="clock" class="w-5 h-5 text-brand"></i>
-        </div>
-        <div>
-         <p class="font-semibold text-gray-800 text-sm mb-1">Response Time</p>
-         <p class="text-gray-500 text-sm">We respond to all inquiries within 24 hours.</p>
-        </div>
-       </div>
-      </div>
 
       <!-- FAQ Mini -->
       <h3 class="font-display font-semibold text-lg mb-4" style="color:#1a1f36;">Quick Answers</h3>
@@ -179,64 +184,223 @@ tailwind.config = {
        <div id="form-success" class="hidden mt-4 p-3 bg-green-50 border border-green-200 rounded-xl text-green-700 text-sm text-center font-medium">
         ✓ Message sent! We'll be in touch within 24 hours.
        </div>
+       </form>
+      </div>
+
+     </div>
+    </section>
+
+    <!-- GET QUOTE FORM -->
+    <section id="quote" class="w-full py-20 px-6" style="background:#F1F3F9;">
+     <div class="max-w-4xl mx-auto">
+      <div class="text-center mb-12">
+       <span class="text-xs font-semibold text-accent tracking-widest uppercase">Get Started</span>
+       <h2 class="font-display font-bold text-3xl md:text-4xl mt-3" style="color:#1a1f36;">Request a Free Quote</h2>
+       <p class="text-gray-500 mt-4 max-w-lg mx-auto">Tell us about your project and we'll provide a detailed quote within 24 hours.</p>
+      </div>
+      <form id="quote-form" class="bg-white rounded-2xl p-8 shadow-xl shadow-brand/5 border border-gray-100">
+       <div class="grid md:grid-cols-2 gap-6 mb-6">
+        <div>
+         <label for="quote-name" class="text-sm font-medium text-gray-700 mb-1.5 block">Full Name *</label>
+         <input id="quote-name" type="text" placeholder="Your full name" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-brand focus:ring-2 focus:ring-brand/10 outline-none transition text-sm" required>
+        </div>
+        <div>
+         <label for="quote-email" class="text-sm font-medium text-gray-700 mb-1.5 block">Email Address *</label>
+         <input id="quote-email" type="email" placeholder="your@email.com" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-brand focus:ring-2 focus:ring-brand/10 outline-none transition text-sm" required>
+        </div>
+       </div>
+       <div class="grid md:grid-cols-2 gap-6 mb-6">
+        <div>
+         <label for="quote-phone" class="text-sm font-medium text-gray-700 mb-1.5 block">Phone Number</label>
+         <input id="quote-phone" type="tel" placeholder="9762948720" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-brand focus:ring-2 focus:ring-brand/10 outline-none transition text-sm">
+        </div>
+        <div>
+         <label for="quote-company" class="text-sm font-medium text-gray-700 mb-1.5 block">Company Name</label>
+         <input id="quote-company" type="text" placeholder="Your company" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-brand focus:ring-2 focus:ring-brand/10 outline-none transition text-sm">
+        </div>
+       </div>
+       <div class="mb-6">
+        <label for="quote-service" class="text-sm font-medium text-gray-700 mb-1.5 block">Service Required *</label>
+        <select id="quote-service" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-brand focus:ring-2 focus:ring-brand/10 outline-none transition text-sm text-gray-600 bg-white" required>
+         <option value="">Select a service...</option>
+         <option>Website Development</option>
+         <option>Software Development</option>
+         <option>Mobile App Development</option>
+         <option>E-commerce Platform</option>
+         <option>Digital Marketing</option>
+         <option>Hosting & Domain</option>
+         <option>Cybersecurity</option>
+         <option>UI/UX Design</option>
+         <option>IT Training</option>
+         <option>Other</option>
+        </select>
+       </div>
+       <div class="mb-6">
+        <label for="quote-budget" class="text-sm font-medium text-gray-700 mb-1.5 block">Estimated Budget</label>
+        <select id="quote-budget" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-brand focus:ring-2 focus:ring-brand/10 outline-none transition text-sm text-gray-600 bg-white">
+         <option value="">Select budget range...</option>
+         <option>Under NPR 25,000</option>
+         <option>NPR 25,000 - 50,000</option>
+         <option>NPR 50,000 - 1,00,000</option>
+         <option>NPR 1,00,000 - 2,00,000</option>
+         <option>Above NPR 2,00,000</option>
+         <option>Not sure yet</option>
+        </select>
+       </div>
+       <div class="mb-6">
+        <label for="quote-message" class="text-sm font-medium text-gray-700 mb-1.5 block">Project Details *</label>
+        <textarea id="quote-message" rows="4" placeholder="Describe your project, goals, timeline, and any specific requirements..." class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-brand focus:ring-2 focus:ring-brand/10 outline-none transition text-sm resize-none" required></textarea>
+       </div>
+       <button type="submit" class="w-full bg-accent hover:bg-accent-light text-white font-semibold py-4 rounded-xl transition-all shadow-lg shadow-accent/20 hover:shadow-xl hover:shadow-accent/30 text-base">Get Free Quote →</button>
+       <div id="quote-success" class="hidden mt-4 p-4 bg-green-50 border border-green-200 rounded-xl text-green-700 text-sm text-center font-medium">
+        ✓ Quote request submitted! We'll contact you within 24 hours.
+       </div>
       </form>
      </div>
+    </section>
 
-    </div>
-   </section>
+    <!-- FAQ SECTION -->
+    <section class="w-full py-20 px-6">
+     <div class="max-w-4xl mx-auto">
+      <div class="text-center mb-14">
+       <span class="text-xs font-semibold text-accent tracking-widest uppercase">FAQ</span>
+       <h2 class="font-display font-bold text-3xl md:text-4xl mt-3" style="color:#1a1f36;">Frequently Asked Questions</h2>
+       <p class="text-gray-500 mt-4">Everything you need to know about working with Sovryx Tech.</p>
+      </div>
 
-   <!-- FOOTER -->
+      <div class="space-y-4">
+       <div class="bg-white rounded-2xl p-6 border border-gray-100">
+        <h3 class="font-display font-semibold text-lg mb-3" style="color:#1a1f36;">How long does a typical project take?</h3>
+        <p class="text-gray-500 leading-relaxed">Project timelines vary based on complexity. A basic website takes 2-4 weeks, while complex software solutions may take 3-6 months. We'll provide a detailed timeline during our initial consultation.</p>
+       </div>
+
+       <div class="bg-white rounded-2xl p-6 border border-gray-100">
+        <h3 class="font-display font-semibold text-lg mb-3" style="color:#1a1f36;">Do you provide ongoing support after project completion?</h3>
+        <p class="text-gray-500 leading-relaxed">Yes! We offer comprehensive maintenance packages starting from NPR 1,500/month for websites and NPR 3,000/month for software. This includes updates, security monitoring, and technical support.</p>
+       </div>
+
+       <div class="bg-white rounded-2xl p-6 border border-gray-100">
+        <h3 class="font-display font-semibold text-lg mb-3" style="color:#1a1f36;">Can you work with our existing systems?</h3>
+        <p class="text-gray-500 leading-relaxed">Absolutely. We specialize in API integration and can work with your existing infrastructure. Whether it's connecting to your CRM, payment gateways, or other business systems, we ensure seamless integration.</p>
+       </div>
+
+       <div class="bg-white rounded-2xl p-6 border border-gray-100">
+        <h3 class="font-display font-semibold text-lg mb-3" style="color:#1a1f36;">What payment methods do you accept?</h3>
+        <p class="text-gray-500 leading-relaxed">We accept bank transfers, eSewa, Khalti, and other popular payment methods in Nepal. For international clients, we also accept PayPal and bank wire transfers.</p>
+       </div>
+
+       <div class="bg-white rounded-2xl p-6 border border-gray-100">
+        <h3 class="font-display font-semibold text-lg mb-3" style="color:#1a1f36;">Do you provide training for our team?</h3>
+        <p class="text-gray-500 leading-relaxed">Yes, we include basic training with every project. For more comprehensive training, we offer IT training programs covering web development, programming, and practical IT skills.</p>
+       </div>
+
+       <div class="bg-white rounded-2xl p-6 border border-gray-100">
+        <h3 class="font-display font-semibold text-lg mb-3" style="color:#1a1f36;">What if I'm not satisfied with the work?</h3>
+        <p class="text-gray-500 leading-relaxed">Your satisfaction is our priority. We offer unlimited revisions during development and a 30-day post-launch support period. If you're not happy, we'll work with you until you are.</p>
+       </div>
+      </div>
+     </div>
+    </section>
+
+    <!-- GOOGLE MAP -->
+    <section class="w-full py-20 px-6" style="background:#F1F3F9;">
+     <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-12">
+       <span class="text-xs font-semibold text-accent tracking-widest uppercase">Find Us</span>
+       <h2 class="font-display font-bold text-3xl md:text-4xl mt-3" style="color:#1a1f36;">Our Location</h2>
+       <p class="text-gray-500 mt-4">Visit us in Biratnagar, Nepal — we're always happy to meet in person.</p>
+      </div>
+      <div class="bg-white rounded-2xl p-4 shadow-lg">
+       <div class="aspect-[16/9] rounded-xl overflow-hidden">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3584.123456789012!2d87.2833!3d26.4831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e5a7b7b7b7b7b7%3A0x1234567890abcdef!2sBiratnagar%2C%20Nepal!5e0!3m2!1sen!2s!4v1234567890123!5m2!1sen!2s" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+       </div>
+      </div>
+     </div>
+    </section>
+
+    <!-- FOOTER -->
    <footer class="w-full py-14 px-6" style="background:#1a1f36;">
     <div class="max-w-6xl mx-auto">
      <div class="flex flex-col md:flex-row gap-10 justify-between mb-10">
-      <div>
-       <div class="flex items-center gap-2 mb-4">
-        <img src="logo.png" alt="Sovryx Logo" class="w-8 h-8 rounded-lg">
-        <span class="font-display font-semibold text-white text-lg">Sovryx Tech</span>
+       <div>
+        <div class="flex items-center gap-2 mb-4">
+         <img src="logo.png" alt="Sovryx Tech" class="w-9 h-9 rounded-lg">
+         <span class="font-display font-bold text-white text-lg">Sovryx Tech</span>
+        </div>
+        <p class="text-gray-400 text-sm leading-relaxed mb-4">Your Digital Success Partner</p>
+        <p class="text-gray-500 text-xs leading-relaxed mb-5">Smart Technology for Smart Businesses. Empowering Nepal's businesses through innovative digital solutions.</p>
+        <div class="flex gap-3">
+         <a href="https://wa.me/9779762948720" target="_blank" class="w-9 h-9 rounded-full bg-green-600/20 hover:bg-green-600/40 flex items-center justify-center transition" title="WhatsApp" style="text-decoration:none;">
+          <svg class="w-4 h-4 text-green-400" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+         </a>
+         <a href="https://facebook.com" target="_blank" class="w-9 h-9 rounded-full bg-white/5 hover:bg-blue-600/30 flex items-center justify-center transition" style="text-decoration:none;"><i data-lucide="facebook" class="w-4 h-4 text-gray-400"></i></a>
+         <a href="https://instagram.com" target="_blank" class="w-9 h-9 rounded-full bg-white/5 hover:bg-pink-600/30 flex items-center justify-center transition" style="text-decoration:none;"><i data-lucide="instagram" class="w-4 h-4 text-gray-400"></i></a>
+         <a href="https://linkedin.com" target="_blank" class="w-9 h-9 rounded-full bg-white/5 hover:bg-blue-700/30 flex items-center justify-center transition" style="text-decoration:none;"><i data-lucide="linkedin" class="w-4 h-4 text-gray-400"></i></a>
+        </div>
        </div>
-       <p class="text-gray-500 text-sm max-w-xs leading-relaxed">Premium digital agency specializing in transforming bold ideas into exceptional digital products.</p>
-      </div>
       <div class="flex gap-12">
-       <div>
-        <h4 class="text-white font-semibold text-sm mb-4">Pages</h4>
-        <ul class="space-y-2">
-         <li><a href="index.html" class="text-gray-500 text-sm hover:text-white transition-colors" style="text-decoration:none;">Home</a></li>
-         <li><a href="services.html" class="text-gray-500 text-sm hover:text-white transition-colors" style="text-decoration:none;">Services</a></li>
-         <li><a href="about.html" class="text-gray-500 text-sm hover:text-white transition-colors" style="text-decoration:none;">About</a></li>
-         <li><a href="portfolio.html" class="text-gray-500 text-sm hover:text-white transition-colors" style="text-decoration:none;">Portfolio</a></li>
-         <li><a href="contact.html" class="text-white text-sm font-medium" style="text-decoration:none;">Contact</a></li>
-        </ul>
-       </div>
-       <div>
-        <h4 class="text-white font-semibold text-sm mb-4">Contact</h4>
-        <ul class="space-y-2">
-         <li class="text-gray-500 text-sm">hello@sovryx.tech</li>
-         <li class="text-gray-500 text-sm">+1 (555) 240-8090</li>
-         <li class="text-gray-500 text-sm">San Francisco, CA</li>
-        </ul>
-       </div>
+        <div>
+         <h4 class="text-white font-semibold text-sm mb-5">Quick Links</h4>
+         <ul class="space-y-2.5">
+          <li><a href="index.html" class="text-gray-400 text-sm hover:text-white transition-colors" style="text-decoration:none;">Home</a></li>
+          <li><a href="about.html" class="text-gray-400 text-sm hover:text-white transition-colors" style="text-decoration:none;">About Us</a></li>
+          <li><a href="services.html" class="text-gray-400 text-sm hover:text-white transition-colors" style="text-decoration:none;">Services</a></li>
+          <li><a href="pricing.html" class="text-gray-400 text-sm hover:text-white transition-colors" style="text-decoration:none;">Pricing</a></li>
+          <li><a href="portfolio.html" class="text-gray-400 text-sm hover:text-white transition-colors" style="text-decoration:none;">Portfolio</a></li>
+          <li><a href="contact.html" class="text-white text-sm font-medium" style="text-decoration:none;">Contact</a></li>
+         </ul>
+        </div>
+        <div>
+         <h4 class="text-white font-semibold text-sm mb-5">Services</h4>
+         <ul class="space-y-2.5">
+          <li><a href="services.html" class="text-gray-400 text-sm hover:text-white transition-colors" style="text-decoration:none;">Website Development</a></li>
+          <li><a href="services.html" class="text-gray-400 text-sm hover:text-white transition-colors" style="text-decoration:none;">Software Development</a></li>
+          <li><a href="services.html" class="text-gray-400 text-sm hover:text-white transition-colors" style="text-decoration:none;">Mobile Apps</a></li>
+          <li><a href="services.html" class="text-gray-400 text-sm hover:text-white transition-colors" style="text-decoration:none;">Digital Marketing</a></li>
+          <li><a href="services.html" class="text-gray-400 text-sm hover:text-white transition-colors" style="text-decoration:none;">Hosting & Domain</a></li>
+          <li><a href="services.html" class="text-gray-400 text-sm hover:text-white transition-colors" style="text-decoration:none;">Cybersecurity</a></li>
+         </ul>
+        </div>
+        <div>
+         <h4 class="text-white font-semibold text-sm mb-5">Contact Us</h4>
+         <ul class="space-y-3">
+          <li class="flex items-start gap-2.5"><i data-lucide="map-pin" class="w-4 h-4 text-accent mt-0.5 flex-shrink-0"></i><span class="text-gray-400 text-sm">Biratnagar-1, Morang<br>Nepal</span></li>
+          <li class="flex items-center gap-2.5"><i data-lucide="phone" class="w-4 h-4 text-accent flex-shrink-0"></i><a href="tel:9762948720" class="text-gray-400 text-sm hover:text-white transition-colors" style="text-decoration:none;">9762948720</a></li>
+          <li class="flex items-center gap-2.5"><i data-lucide="mail" class="w-4 h-4 text-accent flex-shrink-0"></i><a href="mailto:sovryx.tech@gmail.com" class="text-gray-400 text-sm hover:text-white transition-colors" style="text-decoration:none;">sovryx.tech@gmail.com</a></li>
+          <li class="flex items-center gap-2.5"><i data-lucide="globe" class="w-4 h-4 text-accent flex-shrink-0"></i><a href="index.html" class="text-gray-400 text-sm hover:text-white transition-colors" style="text-decoration:none;">www.sovryx.tech</a></li>
+         </ul>
+        </div>
       </div>
      </div>
-     <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
-      <p class="text-gray-500 text-sm">© 2025 Sovryx Tech Pvt. Ltd. All rights reserved.</p>
-      <div class="flex gap-4">
-       <div class="w-9 h-9 rounded-full bg-white/5 hover:bg-accent/20 flex items-center justify-center cursor-pointer transition"><i data-lucide="twitter" class="w-4 h-4 text-gray-400"></i></div>
-       <div class="w-9 h-9 rounded-full bg-white/5 hover:bg-accent/20 flex items-center justify-center cursor-pointer transition"><i data-lucide="linkedin" class="w-4 h-4 text-gray-400"></i></div>
-       <div class="w-9 h-9 rounded-full bg-white/5 hover:bg-accent/20 flex items-center justify-center cursor-pointer transition"><i data-lucide="github" class="w-4 h-4 text-gray-400"></i></div>
+      <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+       <p class="text-gray-500 text-sm">© 2025 Sovryx Tech Pvt. Ltd. All rights reserved.</p>
+       <p class="text-gray-600 text-xs">Your Digital Success Partner · Smart Technology for Smart Businesses</p>
       </div>
-     </div>
     </div>
    </footer>
 
   </div>
-  <script>
+   <script>
 document.getElementById('contact-form').addEventListener('submit', (e) => {
   e.preventDefault();
   document.getElementById('form-success').classList.remove('hidden');
   e.target.reset();
   setTimeout(() => document.getElementById('form-success').classList.add('hidden'), 5000);
 });
+
+document.getElementById('quote-form').addEventListener('submit', (e) => {
+  e.preventDefault();
+  document.getElementById('quote-success').classList.remove('hidden');
+  e.target.reset();
+  setTimeout(() => document.getElementById('quote-success').classList.add('hidden'), 5000);
+});
 </script>
+
+  <!-- WhatsApp Float -->
+  <a href="https://wa.me/9779762948720" target="_blank" rel="noopener noreferrer" class="whatsapp-float" title="Chat on WhatsApp">
+   <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
   <script src="scripts.js"></script>
  </body>
 </html>

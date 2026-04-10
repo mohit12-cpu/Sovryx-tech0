@@ -30,6 +30,14 @@ body { box-sizing: border-box; }
   opacity: 0.12;
   pointer-events: none;
 }
+.page-hero-glow {
+  position: absolute;
+  width: 400px; height: 400px;
+  border-radius: 50%;
+  filter: blur(100px);
+  opacity: 0.08;
+  pointer-events: none;
+}
 .card-hover {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -44,7 +52,7 @@ body { box-sizing: border-box; }
   box-shadow: 0 28px 80px rgba(59,74,154,0.12);
   backdrop-filter: blur(24px) saturate(180%);
   -webkit-backdrop-filter: blur(24px) saturate(180%);
-  transition: background 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
+  transition: background 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
   overflow: hidden;
 }
 .nav-scroll::before {
@@ -73,11 +81,65 @@ body { box-sizing: border-box; }
 
 .nav-link-active { color: #3B4A9A !important; font-weight: 600 !important; }
 
-.page-hero-glow {
-  position: absolute;
-  width: 400px; height: 400px;
+/* WhatsApp Floating Button */
+.whatsapp-float {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  z-index: 999;
+  width: 58px;
+  height: 58px;
+  background: #25D366;
   border-radius: 50%;
-  filter: blur(100px);
-  opacity: 0.08;
-  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.45);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.whatsapp-float:hover {
+  transform: scale(1.12);
+  box-shadow: 0 6px 28px rgba(37, 211, 102, 0.6);
+}
+
+/* Pricing */
+.pricing-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.pricing-card:hover {
+  transform: translateY(-4px);
+}
+.pricing-popular {
+  border: 2px solid #3B4A9A !important;
+  box-shadow: 0 20px 60px rgba(59,74,154,0.15);
+}
+
+/* FAQ Accordion */
+.faq-item details summary { cursor: pointer; list-style: none; }
+.faq-item details summary::-webkit-details-marker { display: none; }
+.faq-icon { transition: transform 0.3s ease; }
+details[open] .faq-icon { transform: rotate(180deg); }
+
+/* Service category badge */
+.service-badge {
+  display: inline-block;
+  padding: 3px 12px;
+  border-radius: 999px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  background: rgba(59,74,154,0.08);
+  color: #3B4A9A;
+}
+
+/* Team card */
+.team-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.team-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(59,74,154,0.12);
 }

@@ -36,21 +36,26 @@ tailwind.config = {
       <a href="index.html"><img src="logo.png" alt="Sovryx Logo" class="w-12 h-12 rounded-lg"></a>
       <a href="index.html" class="font-display font-bold text-3xl" style="color:#3B4A9A; text-decoration:none;">Sovryx Tech</a>
      </div>
-     <div class="hidden md:flex items-center gap-8">
-      <a href="services.html" class="text-sm font-medium text-gray-600 hover:text-brand transition-colors">Services</a>
-      <a href="about.html" class="text-sm font-medium text-gray-600 hover:text-brand transition-colors">About</a>
-      <a href="portfolio.html" class="text-sm font-medium nav-link-active transition-colors">Portfolio</a>
-      <a href="contact.html" class="text-sm font-medium text-gray-600 hover:text-brand transition-colors">Contact</a>
-      <a href="contact.html" class="bg-brand hover:bg-brand-dark text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-all shadow-md shadow-brand/20 hover:shadow-lg hover:shadow-brand/30" style="text-decoration:none;">Let's Talk</a>
-     </div>
+      <div class="hidden md:flex items-center gap-8">
+       <a href="index.html" class="text-sm font-medium text-gray-600 hover:text-brand transition-colors">Home</a>
+       <a href="about.html" class="text-sm font-medium text-gray-600 hover:text-brand transition-colors">About Us</a>
+       <a href="services.html" class="text-sm font-medium text-gray-600 hover:text-brand transition-colors">Services</a>
+       <a href="pricing.html" class="text-sm font-medium text-gray-600 hover:text-brand transition-colors">Pricing</a>
+       <a href="portfolio.html" class="text-sm font-medium nav-link-active transition-colors">Portfolio</a>
+       <a href="contact.html" class="text-sm font-medium text-gray-600 hover:text-brand transition-colors">Contact</a>
+       <a href="contact.html#quote" class="bg-accent hover:bg-accent-light text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-all shadow-md shadow-accent/20" style="text-decoration:none;">Get Quote</a>
+      </div>
      <button id="mobile-toggle" class="md:hidden text-brand"><i data-lucide="menu" class="w-6 h-6"></i></button>
     </div>
-    <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 flex flex-col gap-3 items-center">
-     <a href="services.html" class="text-sm font-medium text-gray-600">Services</a>
-     <a href="about.html" class="text-sm font-medium text-gray-600">About</a>
-     <a href="portfolio.html" class="text-sm font-semibold text-brand">Portfolio</a>
-     <a href="contact.html" class="text-sm font-medium text-gray-600">Contact</a>
-    </div>
+     <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 flex flex-col gap-3 items-center">
+      <a href="index.html" class="text-sm font-medium text-gray-600">Home</a>
+      <a href="about.html" class="text-sm font-medium text-gray-600">About Us</a>
+      <a href="services.html" class="text-sm font-medium text-gray-600">Services</a>
+      <a href="pricing.html" class="text-sm font-medium text-gray-600">Pricing</a>
+      <a href="portfolio.html" class="text-sm font-semibold text-brand">Portfolio</a>
+      <a href="contact.html" class="text-sm font-medium text-gray-600">Contact</a>
+      <a href="contact.html#quote" class="bg-accent text-white text-sm font-semibold px-6 py-2 rounded-full" style="text-decoration:none;">Get Quote</a>
+     </div>
    </nav>
 
    <!-- PAGE HERO -->
@@ -83,106 +88,86 @@ tailwind.config = {
     </div>
    </section>
 
-   <!-- PROJECTS GRID -->
-   <section class="w-full py-16 px-6">
-    <div class="max-w-6xl mx-auto">
-     <div class="grid md:grid-cols-3 gap-6">
+    <!-- PROJECTS GRID -->
+    <section class="w-full py-16 px-6">
+     <div class="max-w-6xl mx-auto">
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
 
-      <!-- Row 1 -->
-      <div class="reveal project-card aspect-[4/3]" style="background: linear-gradient(135deg, #3B4A9A, #6B7FD7);">
-       <div class="w-full h-full flex items-center justify-center">
-        <div class="text-center p-8">
-         <i data-lucide="trending-up" class="w-12 h-12 text-white/40 mx-auto"></i>
-         <p class="text-white/50 text-sm mt-4 font-medium">FinTech Dashboard</p>
+       <!-- Project 1 -->
+       <div class="reveal bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm group hover:shadow-lg transition-all">
+        <div class="aspect-[4/3] bg-gradient-to-br from-brand to-brand-dark flex items-center justify-center">
+         <i data-lucide="globe" class="w-16 h-16 text-white/60"></i>
+        </div>
+        <div class="p-6">
+         <h4 class="font-display font-bold text-lg mb-2" style="color:#1a1f36;">Hotel Paradise Biratnagar</h4>
+         <p class="text-accent text-sm font-medium mb-3">Website Development</p>
+         <p class="text-gray-500 text-sm leading-relaxed">Modern responsive website for a premium hotel in Biratnagar featuring room bookings, gallery, and contact forms.</p>
         </div>
        </div>
-       <div class="overlay">
-        <div>
-         <h4 class="text-white font-display font-semibold text-lg">NovaPay Dashboard</h4>
-         <p class="text-blue-200 text-sm mt-1">FinTech · Web App</p>
+
+       <!-- Project 2 -->
+       <div class="reveal bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm group hover:shadow-lg transition-all">
+        <div class="aspect-[4/3] bg-gradient-to-br from-accent to-accent-light flex items-center justify-center">
+         <i data-lucide="shopping-bag" class="w-16 h-16 text-white/60"></i>
+        </div>
+        <div class="p-6">
+         <h4 class="font-display font-bold text-lg mb-2" style="color:#1a1f36;">Nepali Handicraft E-commerce</h4>
+         <p class="text-accent text-sm font-medium mb-3">E-commerce Platform</p>
+         <p class="text-gray-500 text-sm leading-relaxed">Complete online store for traditional Nepali handicrafts with payment integration and inventory management.</p>
         </div>
        </div>
+
+       <!-- Project 3 -->
+       <div class="reveal bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm group hover:shadow-lg transition-all">
+        <div class="aspect-[4/3] bg-gradient-to-br from-green-500 to-green-600 flex items-center justify-center">
+         <i data-lucide="building-2" class="w-16 h-16 text-white/60"></i>
+        </div>
+        <div class="p-6">
+         <h4 class="font-display font-bold text-lg mb-2" style="color:#1a1f36;">School Management System</h4>
+         <p class="text-accent text-sm font-medium mb-3">Software Development</p>
+         <p class="text-gray-500 text-sm leading-relaxed">Comprehensive ERP system for schools including student management, attendance, and grade tracking.</p>
+        </div>
+       </div>
+
+       <!-- Project 4 -->
+       <div class="reveal bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm group hover:shadow-lg transition-all">
+        <div class="aspect-[4/3] bg-gradient-to-br from-purple-500 to-purple-600 flex items-center justify-center">
+         <i data-lucide="smartphone" class="w-16 h-16 text-white/60"></i>
+        </div>
+        <div class="p-6">
+         <h4 class="font-display font-bold text-lg mb-2" style="color:#1a1f36;">Food Delivery App</h4>
+         <p class="text-accent text-sm font-medium mb-3">Mobile App Development</p>
+         <p class="text-gray-500 text-sm leading-relaxed">Cross-platform mobile app for restaurants in Kathmandu with real-time order tracking and payment integration.</p>
+        </div>
+       </div>
+
+       <!-- Project 5 -->
+       <div class="reveal bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm group hover:shadow-lg transition-all">
+        <div class="aspect-[4/3] bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center">
+         <i data-lucide="briefcase" class="w-16 h-16 text-white/60"></i>
+        </div>
+        <div class="p-6">
+         <h4 class="font-display font-bold text-lg mb-2" style="color:#1a1f36;">Accounting Software</h4>
+         <p class="text-accent text-sm font-medium mb-3">Business Software</p>
+         <p class="text-gray-500 text-sm leading-relaxed">Custom accounting software for small businesses in Nepal with tax calculation and financial reporting.</p>
+        </div>
+       </div>
+
+       <!-- Project 6 -->
+       <div class="reveal bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm group hover:shadow-lg transition-all">
+        <div class="aspect-[4/3] bg-gradient-to-br from-red-500 to-red-600 flex items-center justify-center">
+         <i data-lucide="megaphone" class="w-16 h-16 text-white/60"></i>
+        </div>
+        <div class="p-6">
+         <h4 class="font-display font-bold text-lg mb-2" style="color:#1a1f36;">Restaurant Digital Marketing</h4>
+         <p class="text-accent text-sm font-medium mb-3">Digital Marketing</p>
+         <p class="text-gray-500 text-sm leading-relaxed">Complete digital marketing campaign including SEO, social media, and Google Ads for local restaurants.</p>
+        </div>
+       </div>
+
       </div>
-
-      <div class="reveal project-card aspect-[4/3]" style="background: linear-gradient(135deg, #F15A24, #FF9A76);">
-       <div class="w-full h-full flex items-center justify-center">
-        <div class="text-center p-8">
-         <i data-lucide="shopping-bag" class="w-12 h-12 text-white/40 mx-auto"></i>
-         <p class="text-white/50 text-sm mt-4 font-medium">E-Commerce Platform</p>
-        </div>
-       </div>
-       <div class="overlay" style="background: linear-gradient(to top, rgba(241,90,36,0.85) 0%, transparent 60%);">
-        <div>
-         <h4 class="text-white font-display font-semibold text-lg">LuxeCart</h4>
-         <p class="text-orange-100 text-sm mt-1">E-Commerce · Mobile</p>
-        </div>
-       </div>
-      </div>
-
-      <div class="reveal project-card aspect-[4/3]" style="background: linear-gradient(135deg, #1a1f36, #3B4A9A);">
-       <div class="w-full h-full flex items-center justify-center">
-        <div class="text-center p-8">
-         <i data-lucide="cpu" class="w-12 h-12 text-white/40 mx-auto"></i>
-         <p class="text-white/50 text-sm mt-4 font-medium">AI Analytics</p>
-        </div>
-       </div>
-       <div class="overlay">
-        <div>
-         <h4 class="text-white font-display font-semibold text-lg">InsightAI</h4>
-         <p class="text-blue-200 text-sm mt-1">AI/ML · Platform</p>
-        </div>
-       </div>
-      </div>
-
-      <!-- Row 2 -->
-      <div class="reveal project-card aspect-[4/3]" style="background: linear-gradient(135deg, #10B981, #34D399);">
-       <div class="w-full h-full flex items-center justify-center">
-        <div class="text-center p-8">
-         <i data-lucide="heart-pulse" class="w-12 h-12 text-white/40 mx-auto"></i>
-         <p class="text-white/50 text-sm mt-4 font-medium">Health Platform</p>
-        </div>
-       </div>
-       <div class="overlay" style="background: linear-gradient(to top, rgba(16,185,129,0.85) 0%, transparent 60%);">
-        <div>
-         <h4 class="text-white font-display font-semibold text-lg">VitalTrack</h4>
-         <p class="text-emerald-100 text-sm mt-1">HealthTech · Mobile App</p>
-        </div>
-       </div>
-      </div>
-
-      <div class="reveal project-card aspect-[4/3]" style="background: linear-gradient(135deg, #7C3AED, #A78BFA);">
-       <div class="w-full h-full flex items-center justify-center">
-        <div class="text-center p-8">
-         <i data-lucide="graduation-cap" class="w-12 h-12 text-white/40 mx-auto"></i>
-         <p class="text-white/50 text-sm mt-4 font-medium">EdTech Platform</p>
-        </div>
-       </div>
-       <div class="overlay" style="background: linear-gradient(to top, rgba(124,58,237,0.85) 0%, transparent 60%);">
-        <div>
-         <h4 class="text-white font-display font-semibold text-lg">LearnSphere</h4>
-         <p class="text-purple-100 text-sm mt-1">EdTech · Web Platform</p>
-        </div>
-       </div>
-      </div>
-
-      <div class="reveal project-card aspect-[4/3]" style="background: linear-gradient(135deg, #0EA5E9, #38BDF8);">
-       <div class="w-full h-full flex items-center justify-center">
-        <div class="text-center p-8">
-         <i data-lucide="building-2" class="w-12 h-12 text-white/40 mx-auto"></i>
-         <p class="text-white/50 text-sm mt-4 font-medium">Real Estate SaaS</p>
-        </div>
-       </div>
-       <div class="overlay" style="background: linear-gradient(to top, rgba(14,165,233,0.85) 0%, transparent 60%);">
-        <div>
-         <h4 class="text-white font-display font-semibold text-lg">PropView</h4>
-         <p class="text-sky-100 text-sm mt-1">PropTech · SaaS</p>
-        </div>
-       </div>
-      </div>
-
      </div>
-    </div>
-   </section>
+    </section>
 
    <!-- TESTIMONIAL -->
    <section class="w-full py-20 px-6" style="background: linear-gradient(135deg, #3B4A9A 0%, #2C3875 100%);">
@@ -211,50 +196,76 @@ tailwind.config = {
     </div>
    </section>
 
-   <!-- FOOTER -->
-   <footer class="w-full py-14 px-6" style="background:#1a1f36;">
-    <div class="max-w-6xl mx-auto">
-     <div class="flex flex-col md:flex-row gap-10 justify-between mb-10">
-      <div>
-       <div class="flex items-center gap-2 mb-4">
-        <img src="logo.png" alt="Sovryx Logo" class="w-8 h-8 rounded-lg">
-        <span class="font-display font-semibold text-white text-lg">Sovryx Tech</span>
+    <!-- FOOTER -->
+    <footer class="w-full pt-16 pb-8 px-6" style="background:#1a1f36;">
+     <div class="max-w-6xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+       <!-- Brand -->
+       <div class="md:col-span-1">
+        <div class="flex items-center gap-2 mb-4">
+         <img src="logo.png" alt="Sovryx Tech" class="w-9 h-9 rounded-lg">
+         <span class="font-display font-bold text-white text-lg">Sovryx Tech</span>
+        </div>
+        <p class="text-gray-400 text-sm leading-relaxed mb-4">Your Digital Success Partner</p>
+        <p class="text-gray-500 text-xs leading-relaxed mb-5">Smart Technology for Smart Businesses. Empowering Nepal's businesses through innovative digital solutions.</p>
+        <div class="flex gap-3">
+         <a href="https://wa.me/9779762948720" target="_blank" class="w-9 h-9 rounded-full bg-green-600/20 hover:bg-green-600/40 flex items-center justify-center transition" title="WhatsApp" style="text-decoration:none;">
+          <svg class="w-4 h-4 text-green-400" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+         </a>
+         <a href="https://facebook.com" target="_blank" class="w-9 h-9 rounded-full bg-white/5 hover:bg-blue-600/30 flex items-center justify-center transition" style="text-decoration:none;"><i data-lucide="facebook" class="w-4 h-4 text-gray-400"></i></a>
+         <a href="https://instagram.com" target="_blank" class="w-9 h-9 rounded-full bg-white/5 hover:bg-pink-600/30 flex items-center justify-center transition" style="text-decoration:none;"><i data-lucide="instagram" class="w-4 h-4 text-gray-400"></i></a>
+         <a href="https://linkedin.com" target="_blank" class="w-9 h-9 rounded-full bg-white/5 hover:bg-blue-700/30 flex items-center justify-center transition" style="text-decoration:none;"><i data-lucide="linkedin" class="w-4 h-4 text-gray-400"></i></a>
+        </div>
        </div>
-       <p class="text-gray-500 text-sm max-w-xs leading-relaxed">Premium digital agency specializing in transforming bold ideas into exceptional digital products.</p>
-      </div>
-      <div class="flex gap-12">
+       <!-- Quick Links -->
        <div>
-        <h4 class="text-white font-semibold text-sm mb-4">Pages</h4>
-        <ul class="space-y-2">
-         <li><a href="index.html" class="text-gray-500 text-sm hover:text-white transition-colors" style="text-decoration:none;">Home</a></li>
-         <li><a href="services.html" class="text-gray-500 text-sm hover:text-white transition-colors" style="text-decoration:none;">Services</a></li>
-         <li><a href="about.html" class="text-gray-500 text-sm hover:text-white transition-colors" style="text-decoration:none;">About</a></li>
+        <h4 class="text-white font-semibold text-sm mb-5">Quick Links</h4>
+        <ul class="space-y-2.5">
+         <li><a href="index.html" class="text-gray-400 text-sm hover:text-white transition-colors" style="text-decoration:none;">Home</a></li>
+         <li><a href="about.html" class="text-gray-400 text-sm hover:text-white transition-colors" style="text-decoration:none;">About Us</a></li>
+         <li><a href="services.html" class="text-gray-400 text-sm hover:text-white transition-colors" style="text-decoration:none;">Services</a></li>
+         <li><a href="pricing.html" class="text-gray-400 text-sm hover:text-white transition-colors" style="text-decoration:none;">Pricing</a></li>
          <li><a href="portfolio.html" class="text-white text-sm font-medium" style="text-decoration:none;">Portfolio</a></li>
-         <li><a href="contact.html" class="text-gray-500 text-sm hover:text-white transition-colors" style="text-decoration:none;">Contact</a></li>
+         <li><a href="contact.html" class="text-gray-400 text-sm hover:text-white transition-colors" style="text-decoration:none;">Contact</a></li>
         </ul>
        </div>
+       <!-- Services -->
        <div>
-        <h4 class="text-white font-semibold text-sm mb-4">Contact</h4>
-        <ul class="space-y-2">
-         <li class="text-gray-500 text-sm">hello@sovryx.tech</li>
-         <li class="text-gray-500 text-sm">+1 (555) 240-8090</li>
-         <li class="text-gray-500 text-sm">San Francisco, CA</li>
+        <h4 class="text-white font-semibold text-sm mb-5">Services</h4>
+        <ul class="space-y-2.5">
+         <li><a href="services.html" class="text-gray-400 text-sm hover:text-white transition-colors" style="text-decoration:none;">Website Development</a></li>
+         <li><a href="services.html" class="text-gray-400 text-sm hover:text-white transition-colors" style="text-decoration:none;">Software Development</a></li>
+         <li><a href="services.html" class="text-gray-400 text-sm hover:text-white transition-colors" style="text-decoration:none;">Mobile Apps</a></li>
+         <li><a href="services.html" class="text-gray-400 text-sm hover:text-white transition-colors" style="text-decoration:none;">Digital Marketing</a></li>
+         <li><a href="services.html" class="text-gray-400 text-sm hover:text-white transition-colors" style="text-decoration:none;">Hosting & Domain</a></li>
+         <li><a href="services.html" class="text-gray-400 text-sm hover:text-white transition-colors" style="text-decoration:none;">Cybersecurity</a></li>
+        </ul>
+       </div>
+       <!-- Contact -->
+       <div>
+        <h4 class="text-white font-semibold text-sm mb-5">Contact Us</h4>
+        <ul class="space-y-3">
+         <li class="flex items-start gap-2.5"><i data-lucide="map-pin" class="w-4 h-4 text-accent mt-0.5 flex-shrink-0"></i><span class="text-gray-400 text-sm">Biratnagar-1, Morang<br>Nepal</span></li>
+         <li class="flex items-center gap-2.5"><i data-lucide="phone" class="w-4 h-4 text-accent flex-shrink-0"></i><a href="tel:9762948720" class="text-gray-400 text-sm hover:text-white transition-colors" style="text-decoration:none;">9762948720</a></li>
+         <li class="flex items-center gap-2.5"><i data-lucide="mail" class="w-4 h-4 text-accent flex-shrink-0"></i><a href="mailto:sovryx.tech@gmail.com" class="text-gray-400 text-sm hover:text-white transition-colors" style="text-decoration:none;">sovryx.tech@gmail.com</a></li>
+         <li class="flex items-center gap-2.5"><i data-lucide="globe" class="w-4 h-4 text-accent flex-shrink-0"></i><a href="index.html" class="text-gray-400 text-sm hover:text-white transition-colors" style="text-decoration:none;">www.sovryx.tech</a></li>
         </ul>
        </div>
       </div>
-     </div>
-     <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
-      <p class="text-gray-500 text-sm">© 2025 Sovryx Tech Pvt. Ltd. All rights reserved.</p>
-      <div class="flex gap-4">
-       <div class="w-9 h-9 rounded-full bg-white/5 hover:bg-accent/20 flex items-center justify-center cursor-pointer transition"><i data-lucide="twitter" class="w-4 h-4 text-gray-400"></i></div>
-       <div class="w-9 h-9 rounded-full bg-white/5 hover:bg-accent/20 flex items-center justify-center cursor-pointer transition"><i data-lucide="linkedin" class="w-4 h-4 text-gray-400"></i></div>
-       <div class="w-9 h-9 rounded-full bg-white/5 hover:bg-accent/20 flex items-center justify-center cursor-pointer transition"><i data-lucide="github" class="w-4 h-4 text-gray-400"></i></div>
+      <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+       <p class="text-gray-500 text-sm">© 2025 Sovryx Tech Pvt. Ltd. All rights reserved.</p>
+       <p class="text-gray-600 text-xs">Your Digital Success Partner · Smart Technology for Smart Businesses</p>
       </div>
      </div>
-    </div>
-   </footer>
+    </footer>
 
-  </div>
-  <script src="scripts.js"></script>
- </body>
-</html>
+   </div>
+
+   <!-- WhatsApp Float -->
+   <a href="https://wa.me/9779762948720" target="_blank" rel="noopener noreferrer" class="whatsapp-float" title="Chat on WhatsApp">
+    <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+   </a>
+
+   <script src="scripts.js"></script>
+  </body>
+ </html>
