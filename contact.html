@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en" class="h-full">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact – Sovryx Tech</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+  <script src="/_sdk/element_sdk.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        brand: '#3B4A9A',
+        'brand-dark': '#2C3875',
+        accent: '#F15A24',
+        'accent-light': '#FF7A4D',
+        surface: '#F8F9FC',
+      }
+    }
+  }
+}
+</script>
+  <link rel="stylesheet" href="styles.css">
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+ </head>
+ <body class="h-full">
+  <div id="app-wrapper" class="w-full h-full overflow-auto" style="background:#FAFBFE;">
+
+   <!-- NAV -->
+   <nav id="navbar" class="nav-scroll fixed top-4 left-1/2 -translate-x-1/2 w-[calc(100%-2rem)] max-w-6xl z-50 px-6 py-4 rounded-[28px]">
+    <div class="flex items-center justify-between">
+     <div class="flex items-center gap-2">
+      <a href="index.html"><img src="logo.png" alt="Sovryx Logo" class="w-12 h-12 rounded-lg"></a>
+      <a href="index.html" class="font-display font-bold text-3xl" style="color:#3B4A9A; text-decoration:none;">Sovryx Tech</a>
+     </div>
+     <div class="hidden md:flex items-center gap-8">
+      <a href="services.html" class="text-sm font-medium text-gray-600 hover:text-brand transition-colors">Services</a>
+      <a href="about.html" class="text-sm font-medium text-gray-600 hover:text-brand transition-colors">About</a>
+      <a href="portfolio.html" class="text-sm font-medium text-gray-600 hover:text-brand transition-colors">Portfolio</a>
+      <a href="contact.html" class="text-sm font-medium nav-link-active transition-colors">Contact</a>
+      <a href="contact.html" class="bg-brand hover:bg-brand-dark text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-all shadow-md shadow-brand/20 hover:shadow-lg hover:shadow-brand/30" style="text-decoration:none;">Let's Talk</a>
+     </div>
+     <button id="mobile-toggle" class="md:hidden text-brand"><i data-lucide="menu" class="w-6 h-6"></i></button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 flex flex-col gap-3 items-center">
+     <a href="services.html" class="text-sm font-medium text-gray-600">Services</a>
+     <a href="about.html" class="text-sm font-medium text-gray-600">About</a>
+     <a href="portfolio.html" class="text-sm font-medium text-gray-600">Portfolio</a>
+     <a href="contact.html" class="text-sm font-semibold text-brand">Contact</a>
+    </div>
+   </nav>
+
+   <!-- PAGE HERO -->
+   <section class="relative w-full pt-36 pb-16 px-6 overflow-hidden">
+    <div class="page-hero-glow" style="background:#3B4A9A; top:-80px; left:-80px;"></div>
+    <div class="page-hero-glow" style="background:#F15A24; bottom:-80px; right:-80px;"></div>
+    <div class="max-w-6xl mx-auto text-center relative z-10">
+     <nav class="flex justify-center mb-5 anim-fade-up" aria-label="Breadcrumb">
+      <ol class="flex items-center gap-2 text-sm text-gray-500">
+       <li><a href="index.html" class="hover:text-brand transition-colors" style="text-decoration:none;">Home</a></li>
+       <li><i data-lucide="chevron-right" class="w-4 h-4 inline-block"></i></li>
+       <li class="text-brand font-medium">Contact</li>
+      </ol>
+     </nav>
+     <div class="anim-fade-up inline-block mb-4 px-4 py-1.5 rounded-full border border-brand/15 bg-brand/5">
+      <span class="text-xs font-semibold text-brand tracking-wide uppercase">Get In Touch</span>
+     </div>
+     <h1 class="font-display font-extrabold text-4xl sm:text-5xl md:text-6xl leading-tight anim-fade-up-d1" style="color:#1a1f36;">Let's Build<br>Something Great</h1>
+     <p class="anim-fade-up-d2 mt-5 text-lg max-w-xl mx-auto" style="color:#6B7280;">Have a project in mind? We'd love to hear about it. Our team responds within 24 hours.</p>
+    </div>
+   </section>
+
+   <!-- CONTACT MAIN -->
+   <section class="w-full py-12 pb-24 px-6">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-16">
+
+     <!-- Info Side -->
+     <div class="reveal">
+      <h2 class="font-display font-bold text-2xl md:text-3xl mb-6" style="color:#1a1f36;">Contact Information</h2>
+      <div class="space-y-5 mb-10">
+       <div class="flex items-start gap-4">
+        <div class="w-12 h-12 rounded-2xl bg-brand/8 flex items-center justify-center flex-shrink-0">
+         <i data-lucide="mail" class="w-5 h-5 text-brand"></i>
+        </div>
+        <div>
+         <p class="font-semibold text-gray-800 text-sm mb-1">Email Us</p>
+         <p class="text-gray-500 text-sm">hello@sovryx.tech</p>
+         <p class="text-gray-500 text-sm">support@sovryx.tech</p>
+        </div>
+       </div>
+       <div class="flex items-start gap-4">
+        <div class="w-12 h-12 rounded-2xl bg-brand/8 flex items-center justify-center flex-shrink-0">
+         <i data-lucide="phone" class="w-5 h-5 text-brand"></i>
+        </div>
+        <div>
+         <p class="font-semibold text-gray-800 text-sm mb-1">Call Us</p>
+         <p class="text-gray-500 text-sm">+1 (555) 240-8090</p>
+         <p class="text-gray-400 text-xs mt-0.5">Mon–Fri, 9am–6pm PST</p>
+        </div>
+       </div>
+       <div class="flex items-start gap-4">
+        <div class="w-12 h-12 rounded-2xl bg-brand/8 flex items-center justify-center flex-shrink-0">
+         <i data-lucide="map-pin" class="w-5 h-5 text-brand"></i>
+        </div>
+        <div>
+         <p class="font-semibold text-gray-800 text-sm mb-1">Visit Us</p>
+         <p class="text-gray-500 text-sm">340 Pine Street, Suite 800</p>
+         <p class="text-gray-500 text-sm">San Francisco, CA 94104</p>
+        </div>
+       </div>
+       <div class="flex items-start gap-4">
+        <div class="w-12 h-12 rounded-2xl bg-brand/8 flex items-center justify-center flex-shrink-0">
+         <i data-lucide="clock" class="w-5 h-5 text-brand"></i>
+        </div>
+        <div>
+         <p class="font-semibold text-gray-800 text-sm mb-1">Response Time</p>
+         <p class="text-gray-500 text-sm">We respond to all inquiries within 24 hours.</p>
+        </div>
+       </div>
+      </div>
+
+      <!-- FAQ Mini -->
+      <h3 class="font-display font-semibold text-lg mb-4" style="color:#1a1f36;">Quick Answers</h3>
+      <div class="space-y-3">
+       <div class="bg-white rounded-xl p-5 border border-gray-100">
+        <p class="font-medium text-sm text-gray-800 mb-1">What's your typical project timeline?</p>
+        <p class="text-sm text-gray-500">Most projects range from 4–16 weeks depending on scope and complexity.</p>
+       </div>
+       <div class="bg-white rounded-xl p-5 border border-gray-100">
+        <p class="font-medium text-sm text-gray-800 mb-1">Do you work with startups?</p>
+        <p class="text-sm text-gray-500">Absolutely — we love working with early-stage teams to bring MVPs to life.</p>
+       </div>
+       <div class="bg-white rounded-xl p-5 border border-gray-100">
+        <p class="font-medium text-sm text-gray-800 mb-1">What's your pricing model?</p>
+        <p class="text-sm text-gray-500">We offer fixed-price and time-and-materials engagements based on your needs.</p>
+       </div>
+      </div>
+     </div>
+
+     <!-- Form Side -->
+     <div class="reveal">
+      <form id="contact-form" class="bg-white rounded-2xl p-8 shadow-xl shadow-brand/5 border border-gray-100">
+       <h2 class="font-display font-bold text-2xl mb-6" style="color:#1a1f36;">Send Us a Message</h2>
+       <div class="space-y-5">
+        <div class="grid sm:grid-cols-2 gap-4">
+         <div>
+          <label for="name" class="text-sm font-medium text-gray-700 mb-1.5 block">Full Name</label>
+          <input id="name" type="text" placeholder="John Doe" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-brand focus:ring-2 focus:ring-brand/10 outline-none transition text-sm">
+         </div>
+         <div>
+          <label for="company" class="text-sm font-medium text-gray-700 mb-1.5 block">Company</label>
+          <input id="company" type="text" placeholder="Acme Inc." class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-brand focus:ring-2 focus:ring-brand/10 outline-none transition text-sm">
+         </div>
+        </div>
+        <div>
+         <label for="email" class="text-sm font-medium text-gray-700 mb-1.5 block">Email</label>
+         <input id="email" type="email" placeholder="john@company.com" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-brand focus:ring-2 focus:ring-brand/10 outline-none transition text-sm">
+        </div>
+        <div>
+         <label for="service" class="text-sm font-medium text-gray-700 mb-1.5 block">Service Interested In</label>
+         <select id="service" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-brand focus:ring-2 focus:ring-brand/10 outline-none transition text-sm text-gray-600 bg-white">
+          <option value="">Select a service...</option>
+          <option>Web Development</option>
+          <option>App Development</option>
+          <option>UI/UX Design</option>
+          <option>IT Solutions</option>
+          <option>Other / Not Sure</option>
+         </select>
+        </div>
+        <div>
+         <label for="message" class="text-sm font-medium text-gray-700 mb-1.5 block">Message</label>
+         <textarea id="message" rows="4" placeholder="Tell us about your project, goals, and timeline..." class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-brand focus:ring-2 focus:ring-brand/10 outline-none transition text-sm resize-none"></textarea>
+        </div>
+        <button type="submit" class="w-full bg-accent hover:bg-accent-light text-white font-semibold py-3.5 rounded-xl transition-all shadow-lg shadow-accent/20 hover:shadow-xl hover:shadow-accent/30">Send Message →</button>
+       </div>
+       <div id="form-success" class="hidden mt-4 p-3 bg-green-50 border border-green-200 rounded-xl text-green-700 text-sm text-center font-medium">
+        ✓ Message sent! We'll be in touch within 24 hours.
+       </div>
+      </form>
+     </div>
+
+    </div>
+   </section>
+
+   <!-- FOOTER -->
+   <footer class="w-full py-14 px-6" style="background:#1a1f36;">
+    <div class="max-w-6xl mx-auto">
+     <div class="flex flex-col md:flex-row gap-10 justify-between mb-10">
+      <div>
+       <div class="flex items-center gap-2 mb-4">
+        <img src="logo.png" alt="Sovryx Logo" class="w-8 h-8 rounded-lg">
+        <span class="font-display font-semibold text-white text-lg">Sovryx Tech</span>
+       </div>
+       <p class="text-gray-500 text-sm max-w-xs leading-relaxed">Premium digital agency specializing in transforming bold ideas into exceptional digital products.</p>
+      </div>
+      <div class="flex gap-12">
+       <div>
+        <h4 class="text-white font-semibold text-sm mb-4">Pages</h4>
+        <ul class="space-y-2">
+         <li><a href="index.html" class="text-gray-500 text-sm hover:text-white transition-colors" style="text-decoration:none;">Home</a></li>
+         <li><a href="services.html" class="text-gray-500 text-sm hover:text-white transition-colors" style="text-decoration:none;">Services</a></li>
+         <li><a href="about.html" class="text-gray-500 text-sm hover:text-white transition-colors" style="text-decoration:none;">About</a></li>
+         <li><a href="portfolio.html" class="text-gray-500 text-sm hover:text-white transition-colors" style="text-decoration:none;">Portfolio</a></li>
+         <li><a href="contact.html" class="text-white text-sm font-medium" style="text-decoration:none;">Contact</a></li>
+        </ul>
+       </div>
+       <div>
+        <h4 class="text-white font-semibold text-sm mb-4">Contact</h4>
+        <ul class="space-y-2">
+         <li class="text-gray-500 text-sm">hello@sovryx.tech</li>
+         <li class="text-gray-500 text-sm">+1 (555) 240-8090</li>
+         <li class="text-gray-500 text-sm">San Francisco, CA</li>
+        </ul>
+       </div>
+      </div>
+     </div>
+     <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+      <p class="text-gray-500 text-sm">© 2025 Sovryx Tech Pvt. Ltd. All rights reserved.</p>
+      <div class="flex gap-4">
+       <div class="w-9 h-9 rounded-full bg-white/5 hover:bg-accent/20 flex items-center justify-center cursor-pointer transition"><i data-lucide="twitter" class="w-4 h-4 text-gray-400"></i></div>
+       <div class="w-9 h-9 rounded-full bg-white/5 hover:bg-accent/20 flex items-center justify-center cursor-pointer transition"><i data-lucide="linkedin" class="w-4 h-4 text-gray-400"></i></div>
+       <div class="w-9 h-9 rounded-full bg-white/5 hover:bg-accent/20 flex items-center justify-center cursor-pointer transition"><i data-lucide="github" class="w-4 h-4 text-gray-400"></i></div>
+      </div>
+     </div>
+    </div>
+   </footer>
+
+  </div>
+  <script>
+document.getElementById('contact-form').addEventListener('submit', (e) => {
+  e.preventDefault();
+  document.getElementById('form-success').classList.remove('hidden');
+  e.target.reset();
+  setTimeout(() => document.getElementById('form-success').classList.add('hidden'), 5000);
+});
+</script>
+  <script src="scripts.js"></script>
+ </body>
+</html>
